@@ -1,0 +1,103 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028-029 toplam_kisi
+02A-02B icerdeki_kisi
+02C-02D fark
+02E     lcd_init.i
+02E-02F @PRINTF_LD_578.P1
+02E     MAIN.@SCRATCH1
+02F     lcd_init.@SCRATCH1
+030     @PRINTF_LD_578.@SCRATCH1
+031     @PRINTF_LD_578.@SCRATCH2
+032     @PRINTF_LD_578.@SCRATCH3
+033     @PRINTF_LD_578.@SCRATCH4
+034     @PRINTF_LD_578.@SCRATCH5
+035     @PRINTF_LD_578.@SCRATCH6
+036     @PRINTF_LD_578.@SCRATCH7
+037     lcd_putc.c
+038     lcd_gotoxy.x
+038     @delay_ms1.P1
+039     lcd_gotoxy.y
+03A     lcd_gotoxy.address
+03B     lcd_gotoxy.@SCRATCH1
+03C     lcd_send_byte.address
+03D     lcd_send_byte.n
+03E     lcd_read_byte.low
+03E     lcd_send_byte.@SCRATCH1
+03F     lcd_send_nibble.n
+03F     lcd_read_byte.high
+040     lcd_read_nibble.n
+040     lcd_read_byte.@SCRATCH1
+041     lcd_read_nibble.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000033  LCD_INIT_STRING.call
+000037  LCD_INIT_STRING.data
+00003B  @const593.call
+00004C  @const594.call
+000058  @const597.call
+000064  RTCC_isr
+00006C  EXT_isr
+000078  @delay_ms1
+00008D  lcd_send_nibble
+0000B8  lcd_read_nibble
+0000E9  lcd_send_byte
+0000F1  lcd_read_byte
+000145  lcd_init
+000180  lcd_gotoxy
+000192  lcd_putc
+0001BE  @PRINTF_LD_578
+00023E  @cinit1
+00023E  MAIN
+000246  @cinit2
+
+Project Directory:
+    C:\Users\can\Documents\
+
+Project Files:
+    müsteri_sayici.c                                        [08-Nis-22 17:30  CRC=2CEE6ECB]
+    müsteri_sayici.h                                        [08-Nis-22 17:00  CRC=D872A938]
+    ..\..\..\Program Files (x86)\PICC\Devices\16F628A.h     [21-Haz-13 16:04  CRC=FEBF88CA]
+    ..\..\..\Program Files (x86)\PICC\Drivers\lcd.c         [23-Aðu-12 09:01  CRC=D28E8746]
+
+Source signature=A93DAF59
+
+Units:
+    müsteri_sayici (main)
+
+Compiler Settings:
+    Processor:      PIC16F628A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   müsteri_sayici.xsym
+    Errors:      müsteri_sayici.err
+    Ext Symbols: müsteri_sayici.esym
+    INHX8:       müsteri_sayici.hex
+    Symbols:     müsteri_sayici.sym
+    List:        müsteri_sayici.lst
+    Debug/COFF:  müsteri_sayici.cof
+    Project:     müsteri_sayici.ccspjt
+    Call Tree:   müsteri_sayici.tre
+    Statistics:  müsteri_sayici.STA

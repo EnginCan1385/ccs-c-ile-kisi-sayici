@@ -1,0 +1,22 @@
+[PROJECT]
+Target=müsteri_sayici.hex
+Processor_Text=PIC16F628A
+CCSVerions=5.007
+Compiler=PCM
+CCSVersion=5.007
+[Target Data]
+FileList=müsteri_sayici.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Users\can\Documents\
+[C:\Users\can\Documents\müsteri_sayici]
+Type=4
+[mru-list]
+1=müsteri_sayici.c
+[Opened Files]
+1=müsteri_sayici.c
+2=
+[müsteri_sayici.c]
+Type=4
+[Units]
+Count=1
+1=müsteri_sayici (main)
